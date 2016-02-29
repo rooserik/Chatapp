@@ -1,13 +1,14 @@
 // First include Bootstrap
 @import "bootstrap";
-
+@import url(https://fonts.googleapis.com/css?family=Overlock:400,700,900,700italic,400italic,900italic);
 // Below import your components' scss files
 // @import "components/base";
 // @import "components/todo-item";
 
 body{
-  background-color: #BCF1ED
-}
+  background-color: #BCF1ED;
+  font-family: 'Overlock', cursive;
+  font-size: 250%;}
 #root{
   @extend .container;
   .channel{
@@ -21,12 +22,25 @@ body{
             @extend .list-group-item;
             background-color: #A1D6D2;
             border: none;
-            margin-top:4px;
-          }
+            margin-top:4px;}
         }
       }
-      form.todo{
-        @extend .row;
+      .todo{
+        form{
+          @extend .form-inline, .well;
+          background-color: #FDEDD0;
+          width: 100%;
+          .form-group{
+            width: inherit;
+            label{
+              @extend .sr-only;}
+            input{
+              width: 80%;
+              @extend .form-control;}
+            button{
+              @extend .btn, .btn-default;}
+          }
+        }
       }
     }
   }

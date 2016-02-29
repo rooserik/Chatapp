@@ -22,11 +22,10 @@ class TodoForm extends React.Component {
     return(
       <div className="todo">
         <form onSubmit={this.createTodo.bind(this)}>
-          <div className="row">
-            <input type="text" className="form-control" ref="newTitle"/>
-          </div>
-          <div>
-            <button type="submit" className="btn btn-primary">Message</button>
+          <div className="form-group">
+            <label>New todo</label>
+            <input type="text" ref="newTitle"/>
+            <button type="submit">Message</button>
           </div>
         </form>
       </div>
