@@ -14,8 +14,10 @@ class App extends React.Component {
     render() {
         return (
             <div className="channel">
-              <TodoList model={this.todos} />
-              <TodoForm model={this.todos} />
+              <div className="column">
+                <TodoList model={this.todos} />
+                <TodoForm model={this.todos} />
+              </div>
             </div>
         );
     }

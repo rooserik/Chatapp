@@ -14,11 +14,13 @@ class TodoForm extends React.Component {
       title: newTitle,
       completed: false
     });
+
+    this.refs.newTitle.value = "";
   }
 
   render(){
     return(
-      <div className="whatever">
+      <div className="todo">
         <form onSubmit={this.createTodo.bind(this)}>
           <div className="row">
             <input type="text" className="form-control" ref="newTitle"/>

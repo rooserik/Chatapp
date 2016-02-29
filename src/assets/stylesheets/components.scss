@@ -5,7 +5,29 @@
 // @import "components/base";
 // @import "components/todo-item";
 
-.channel{
+body{
+  background-color: #BCF1ED
+}
+#root{
   @extend .container;
-
+  .channel{
+    @extend .row;
+    .column{
+      @extend .col-xs-6, .col-xs-offset-3;
+      .list{
+        ul{
+          @extend .list-group;
+          li{
+            @extend .list-group-item;
+            background-color: #A1D6D2;
+            border: none;
+            margin-top:4px;
+          }
+        }
+      }
+      form.todo{
+        @extend .row;
+      }
+    }
+  }
 }
