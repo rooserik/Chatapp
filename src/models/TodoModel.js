@@ -9,7 +9,7 @@ class TodoModel extends BaseModel {
   }
 
   constructor(){
-    super('todo');
+    super('iriserik');
   }
 
 
