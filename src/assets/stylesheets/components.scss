@@ -39,15 +39,21 @@ body{
     margin-bottom: 0;
     .form-group{
       width: inherit;
+      text-align: center;
       label{
         @extend .sr-only;}
       input{
         font-size: inherit;
         height: 50px;
         border:none;
-        width: 90%;
+        width: 85%;
         margin-right:10px;
         @extend .form-control;}
+        @media (max-width: 768px){
+          input{
+            display: inline-block;
+          }
+        }
       button{
         @extend .btn, .btn-primary, .btn-lg;}
     }

@@ -25,7 +25,7 @@ class TodoForm extends React.Component {
           <div className="form-group">
             <label>New todo</label>
             <input type="text" ref="newTitle"/>
-            <button type="submit">Message</button>
+            <button type="submit">+</button>
           </div>
         </form>
       </div>
