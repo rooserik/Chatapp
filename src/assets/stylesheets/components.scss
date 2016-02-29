@@ -5,43 +5,53 @@
 // @import "components/base";
 // @import "components/todo-item";
 
+$brand-primary:  darken(#FD795B, 6.5%) !default; 
+
 body{
   background-color: #BCF1ED;
   font-family: 'Overlock', cursive;
-  font-size: 250%;}
-#root{
+  font-size: 250%;
+  position: relative;}
+.channel{
   @extend .container;
-  .channel{
-    @extend .row;
-    .column{
-      @extend .col-xs-6, .col-xs-offset-3;
-      .list{
-        ul{
-          @extend .list-group;
-          li{
-            @extend .list-group-item;
-            background-color: #A1D6D2;
-            border: none;
-            margin-top:4px;}
-        }
+  padding-bottom: 60px;
+  .column{
+    @extend .col-xs-8, .col-xs-offset-2;
+    .list{
+      ul{
+        @extend .list-group;
+        li{
+          @extend .list-group-item;
+          background-color: #A1D6D2;
+          border: none;
+          margin-top:4px;}
       }
-      .todo{
-        form{
-          @extend .form-inline, .well;
-          background-color: #FDEDD0;
-          width: 100%;
-          .form-group{
-            width: inherit;
-            label{
-              @extend .sr-only;}
-            input{
-              width: 80%;
-              @extend .form-control;}
-            button{
-              @extend .btn, .btn-default;}
-          }
-        }
-      }
+    }
+  }
+}
+.todo{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  form{
+    @extend .form-inline, .well;
+    background-color: #FDEDD0;
+    width: 100%;
+    margin-bottom: 0;
+    .form-group{
+      width: inherit;
+      label{
+        @extend .sr-only;}
+      input{
+        font-size: inherit;
+        height: 50px;
+        border:none;
+        width: 90%;
+        margin-right:10px;
+        @extend .form-control;}
+      button{
+        @extend .btn, .btn-primary, .btn-lg;}
     }
   }
 }

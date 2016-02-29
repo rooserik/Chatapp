@@ -13,12 +13,16 @@ class App extends React.Component {
 
     render() {
         return (
+          <div>
             <div className="channel">
               <div className="column">
-                <TodoList model={this.todos} />
-                <TodoForm model={this.todos} />
+                <div className="row">
+                  <TodoList model={this.todos} />
+                </div>
               </div>
             </div>
+            <TodoForm model={this.todos} />
+          </div>
         );
     }
 }
