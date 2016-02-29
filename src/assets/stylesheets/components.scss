@@ -1,0 +1,11 @@
+// First include Bootstrap
+@import "bootstrap";
+
+// Below import your components' scss files
+// @import "components/base";
+// @import "components/todo-item";
+
+.channel{
+  @extend .container;
+
+}

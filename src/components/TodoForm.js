@@ -24,7 +24,7 @@ class TodoForm extends React.Component {
             <input type="text" className="form-control" ref="newTitle"/>
           </div>
           <div>
-            <button type="submit" classname="btn btn-primary">Message</button>
+            <button type="submit" className="btn btn-primary">Message</button>
           </div>
         </form>
       </div>
